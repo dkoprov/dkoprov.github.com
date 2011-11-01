@@ -1,0 +1,43 @@
+--- 
+layout: post
+title: macports + mysql
+published: true
+---
+<p>Стало тебе нужно поставить mysql под маком.</p>
+<p>По идее, проблем быть не может, но если они возникли...</p>
+<p>&nbsp;</p>
+<p>Что делаем в самом начале. Конечно</p>
+<p>sudo port install mysql5 +server</p>
+<p>+server говорит нам, что нужно доставить еще и сервер на локальную машину.</p>
+<p>Порты поставят мускул и в конце скажут, что если мы хотим, чтобы сервер стартовал автоматически при загрузке системы, надо выполнить команду:</p>
+<p>sudo port load mysql5-server</p>
+<p>&nbsp;</p>
+<p>По идее, все. Но... лично у меня нет. У тебя? Тоже? Читай дальше.</p>
+<p>При попытке зайти на сервер, валится ошибка&nbsp;</p>
+<p>Can't connect to local MySQL server through socket '/opt/local/var/run/mysql5/mysqld.sock'</p>
+<p>Блин, басурмане... в интернетах валяется решение. Пойду его пробовать прямо сейчас.</p>
+<p>&nbsp;</p>
+<p>Звучит оно следующим образом: если при попытке работы с базой у вас валится сообщение по типу того, что сверху, вбейте в терминале:</p>
+<p>mysql_config5 --socket</p>
+<p>И сделайте симлинк с того, что выдает команда на&nbsp;/tmp/mysql.sock&nbsp;</p>
+<p>то есть должна получиться команда:</p>
+<p>sudo ln -s сокет_из_mysql_config5 /tmp/mysql.sock</p>
+<p>&nbsp;</p>
+<p>Второе решение (более грамотное):</p>
+<p>Создать файл конфига (sudo vim...) в&nbsp;/opt/local/etc/mysql5/ со своим выдуманным именем типа там my.cnf (получится&nbsp;&nbsp;/opt/local/etc/mysql5/my.cnf) и вбить туда такую строчку:</p>
+<p><span style="border-collapse: collapse; font-family: Consolas, Bitstream Vera Sans Mono, Courier New, Courier, monospace; font-size: 12px; line-height: 13px;">[mysqld_safe] socket = /tmp/mysql.sock</span></p>
+<p>После чего сохраняемся и пробуем снова.</p>
+<p>Кстати, если вы так же поставили PHP, ему следует указать к какому сокету обращаться. Сделать это надо в&nbsp;/opt/local/etc/php.ini. Вписать надо следующее:</p>
+<p>mysql.default_socket = /tmp/mysql.sock</p>
+<p>&nbsp;</p>
+<p>Еще на заметку. Чтобы быстро стартовать и тушить сервер mysql, в вашем профиле терминала (~/.profile, ~/.bash_profile или .zshrc) добавьте два алиаса:</p>
+<p><span style="color: #666666; font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px;">&nbsp;</span></p>
+<p>&nbsp;</p>
+<p style="text-align: left;">alias mysqlstart='sudo /opt/local/bin/mysqld_safe5 &amp;'</p>
+<p>alias mysqlstop='/opt/local/bin/mysqladmin5 -u root -p shutdown'</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
