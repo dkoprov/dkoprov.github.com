@@ -1,0 +1,61 @@
+*{
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'PT Serif', arial, serif;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  position: relative;
+  max-width: 800px;
+  width: auto;
+  margin: auto;
+}
+
+.content {
+  margin: 2em 1em;
+}
+
+.wtf{
+  position: fixed;
+  bottom: 0.4em;
+  right: 0.1em;
+  font-size: 6em;
+  line-height: 0.1em;
+}
+
+p{
+  margin: 15px 0;
+}
+
+.b-caption{
+  text-align: left;
+  margin: 2em 0;
+}
+
+.b-caption h2{
+  font-size: 2.2em;
+  line-height: 1.3em;
+}
+
+ul.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+ul.posts li {
+  line-height: 1.75em;
+}
+
+ul.posts span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
