@@ -1,0 +1,18 @@
+---
+layout: post
+title: git & texmate
+published: true
+---
+h1. {{ page.title }}
+
+p(meta). 06 May 2011
+
+Если у тебя bundle GIT валит ошибку sh: git: command not found, (но при этом в консоли все работает) сделать надо вот что:
+1. Зайти в Preferences - Advansed
+2. Вкладка Shell Variables
+3. Создать переменную TM_GIT
+4. Открыть терминал, набрать which git
+5. В качестве значения переменной TM_GIT вставить выхлоп от команды из п. 4
+6. Сделать Bundles –> Bundle Editor –> Reload Bundles.
+Готово! Можно пользоваться.
+

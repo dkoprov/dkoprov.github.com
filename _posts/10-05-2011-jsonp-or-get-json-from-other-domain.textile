@@ -1,0 +1,19 @@
+--- 
+layout: post
+title: "Чужой контент"
+published: true
+---
+h1. {{ page.title }}
+
+p(meta). 10 May 2011
+
+Есть два способа кинуть контент на страницу.
+1. Через iframe. Говорим ему что рисовать через src и все.
+2. Через метод load библиотеки jQuery. Пример ниже.
+
+{% highlight html %}
+'<div id="uploader" style="height:330px;width:1000px"></div>' +
+'<script type="text/javascript">$("#uploader").load("/ck_upload_photo", ' +
+                                   ' function(){ bind_selects($("#uploader")); }' +
+                                   ');</script>'
+{% endhighlight%}

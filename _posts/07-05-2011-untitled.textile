@@ -1,0 +1,11 @@
+--- 
+layout: post
+title: Untitled
+published: true
+---
+h1. {{ page.title }}
+
+p(meta). 06 May 2011
+
+Используешь rails 3.1?
+Деплоишь на linux машину? _Всегда_ добавляй therubyracer в Gemset.
