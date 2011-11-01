@@ -34,6 +34,13 @@ p{
 h1 {
   font-size: 1.6em;
   font-weight: condensed;
+  margin: 0 1em;
+}
+
+.post {
+  text-align: justify;
+  font-size: 1.2em;
+  line-height: 1.3em;
 }
 
 .b-caption{
