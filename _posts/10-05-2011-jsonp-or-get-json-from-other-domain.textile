@@ -12,8 +12,10 @@ p(meta). 10 May 2011
 2. Через метод load библиотеки jQuery. Пример ниже.
 
 {% highlight html %}
-'<div id="uploader" style="height:330px;width:1000px"></div>' +
-'<script type="text/javascript">$("#uploader").load("/ck_upload_photo", ' +
-                                   ' function(){ bind_selects($("#uploader")); }' +
-                                   ');</script>'
+<div id="uploader" style="height:330px;width:1000px"></div>
+<script type="text/javascript">
+  $("#uploader").load("/ck_upload_photo",
+    function(){ bind_selects($("#uploader"));
+  }                                 );
+</script>
 {% endhighlight%}
