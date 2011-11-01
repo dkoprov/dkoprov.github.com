@@ -31,15 +31,19 @@ p{
   margin: 15px 0;
 }
 
+p.meta {
+  font-size: 80%;
+  color: #494949;
+}
+
 h1 {
   font-size: 1.6em;
-  font-weight: condensed;
-  margin: 0 1em;
+  margin: 2em 0 1em 0;
 }
 
 .post {
   text-align: justify;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.3em;
 }
 
