@@ -11,7 +11,7 @@
 
 body{
   font-family: 'PT Serif', arial, serif;
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 1.4em;
   position: relative;
   max-width: 800px;
@@ -41,20 +41,8 @@ h1 {
   margin: 2em 0 1em 0;
 }
 
-.post p {
-  text-align: justify;
-  font-size: 1em;
-  line-height: 1.5em;
-}
-
-.b-caption{
-  text-align: left;
-  margin: 2em 0;
-}
-
-.b-caption h2{
-  font-size: 2.2em;
-  line-height: 1.3em;
+.caption{
+  font-size: 1.5em;
 }
 
 ul.posts {
