@@ -41,10 +41,10 @@ h1 {
   margin: 2em 0 1em 0;
 }
 
-.post {
+.post p {
   text-align: justify;
   font-size: 1em;
-  line-height: 1.3em;
+  line-height: 1.5em;
 }
 
 .b-caption{
