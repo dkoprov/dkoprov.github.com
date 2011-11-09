@@ -11,12 +11,12 @@
 
 body{
   font-family: 'PT Serif', arial, serif;
-  font-size: 1.3em;
-  line-height: 1.6em;
+  font-size: 1.1em;
+  line-height: 1.4em;
   position: relative;
-  max-width: 800px;
+  max-width: 1000px;
   width: auto;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .wtf{
