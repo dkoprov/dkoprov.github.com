@@ -1,3 +1,8 @@
+--- 
+layout: post
+title: Untitled
+published: true
+---
 **Preamble**
 
 *Thank you, thank you. I am really grateful to hear such enthusiastic applause from people I admire so much. And thank you, Curator [Pete Forde](http://www.peteforde.com/ "Pete Forde"), for inviting me back to speak at **RubyFringe 2.0**. Last year I kind of invited myself to give a presentation at [RubyFringe](http://rubyfringe.com/ "RubyFringe: Deep nerd tech with punk rock spirit."), and as I said at the time, I wasn't sure if the conference was about the fringe of Ruby Culture or about the fringe of Ruby itself.*
