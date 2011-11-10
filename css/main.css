@@ -15,7 +15,8 @@ body{
   line-height: 1.4em;
   position: relative;
   width: auto;
-  margin: 0 8em;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .wtf{
