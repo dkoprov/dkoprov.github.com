@@ -7,7 +7,7 @@ h1. {{ page.title }}
 
 p(meta). 06 May 2011
 
-Если у тебя bundle GIT валит ошибку sh: git: command not found, (но при этом в консоли все работает) сделать надо вот что:
+Если у тебя bundle GIT валит ошибку sh: @git: command not found@, (но при этом в консоли все работает) сделать надо вот что:
 1. Зайти в Preferences - Advansed
 2. Вкладка Shell Variables
 3. Создать переменную TM_GIT
