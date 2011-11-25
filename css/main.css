@@ -37,6 +37,9 @@ h1 {
 .caption{
   font-size: 1.5em;
 }
+.caption img {
+  margin-bottom: -7px;
+}
 
 ul.posts {
   list-style-type: none;
