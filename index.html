@@ -3,9 +3,12 @@ layout: default
 title: Dmitry Koprov
 ---
 
-<h1>Posts:</h1>
+<h1>Заметки</h1>
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+
+<h1>Полезно почитать</h1>
+<h1>Моя библиотека</h1>

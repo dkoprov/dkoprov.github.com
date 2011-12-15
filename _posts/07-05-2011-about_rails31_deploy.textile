@@ -9,3 +9,4 @@ p(meta). 06 May 2011
 
 Используешь rails 3.1?
 Деплоишь на linux машину? _Всегда_ перед деплоем ставь node.js.
+Если используешь ubuntu/debian, "статья в помощь [en]":http://ariejan.net/2011/10/24/installing-node-js-and-npm-on-ubuntu-debian.
