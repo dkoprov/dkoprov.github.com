@@ -44,12 +44,12 @@ h1 {
 
 ul.posts {
   list-style-type: none;
+  padding-left: 0;
   margin-bottom: 2em;
 }
 
 ul.posts li {
   line-height: 1.75em;
-  padding: 0;
 }
 
 ul.posts span {
