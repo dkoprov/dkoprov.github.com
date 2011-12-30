@@ -1,23 +1,16 @@
-html {
-  background-color: #FDFAF0;
-}
-
 body{
-  font-family: 'PT Serif', Georgia, serif;
-  font-size: 1.1em;
-  line-height: 1.4em;
   position: relative;
-  width: auto;
-  max-width: 960px;
+  max-width: 1000px;
+  color: #444;
+  font-family: 'PT Serif', Georgia, serif;
+  font-size: 1.3em;
+  line-height: 1.4em;
+  padding: 1.8em 2em;
   margin: 0 auto;
 }
 
-.wtf{
-  position: fixed;
-  bottom: 0.4em;
-  right: 0.1em;
-  font-size: 6em;
-  line-height: 0.1em;
+a {
+  color: #00A;
 }
 
 p{
@@ -53,7 +46,6 @@ ul.posts li {
 }
 
 ul.posts span {
-  color: #aaa;
-  font-family: 'Liberation Mono', monospace;
+  font-family: 'Liberation Mono', 'Menlo', monospace;
   font-size: 80%;
 }
