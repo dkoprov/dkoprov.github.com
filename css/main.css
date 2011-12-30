@@ -48,3 +48,7 @@ ul.posts span {
   font-family: 'Liberation Mono', 'Menlo', monospace;
   font-size: 80%;
 }
+
+.post {
+  margin-bottom: 5em;
+}
