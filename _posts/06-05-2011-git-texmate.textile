@@ -1,6 +1,6 @@
 ---
 layout: post
-title: git & texmate
+title: git and texmate
 published: true
 ---
 h1. {{ page.title }}
