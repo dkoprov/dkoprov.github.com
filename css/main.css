@@ -3,10 +3,14 @@ body{
   max-width: 1000px;
   color: #444;
   font-family: 'PT Serif', Georgia, serif;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1.4em;
   padding: .3em 2em;
   margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, .caption {
+  font-family: 'PT Serif Caption', Georgia, serif;
 }
 
 a {
