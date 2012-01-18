@@ -1,0 +1,18 @@
+---
+layout: post
+title: "SQL в Rails консоли"
+published: true
+---
+h1. {{ page.title }}
+
+p(meta). 18 Jan 2012
+
+Начиная с Rails 3.1 у разработчиков появилась возможность просматривать выполненные SQL-запросы в Rails-консоли (мы же знаем, что она открывается командой rails console или rails c).
+Но что делать, если мы на 3 или даже (нет-нет-нет!) 2 рельсах, а SQL посмотреть все-таки хочется?
+
+Все просто.
+Сразу после того, как консоль открылась, надо сказать логгеру от ActiveRecord, чтобы он писал себя в STDOUT:
+
+{% highlight ruby %}
+ActiveRecord::Base.logger = Logger.new STDOUT
+{% endhighlight %}
