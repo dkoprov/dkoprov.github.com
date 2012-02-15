@@ -45,6 +45,8 @@ h1 {
   float: left;
   display: inline-block;
   clear: both;
+  margin-left: .1em;
+  font-size: 80%;
   font-family: 'Liberation Mono', 'Menlo', monospace;
 }
 .caption a {
