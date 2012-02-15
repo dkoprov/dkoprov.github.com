@@ -5,7 +5,7 @@ body{
   font-family: 'PT Serif', Georgia, serif;
   font-size: 1.2em;
   line-height: 1.4em;
-  padding: .3em 2em;
+  padding: 0 .3em 2em;
   margin: 0 auto;
 }
 
@@ -33,9 +33,25 @@ h1 {
 
 .caption{
   font-size: 1.5em;
+  border-bottom: 0.2em solid black;
+  padding: .3em;
+  background-color: #B5E4EB;
+  text-align: right;
 }
 .caption img {
   margin-bottom: -7px;
+}
+.caption span {
+  float: left;
+  display: inline-block;
+  clear: both;
+  font-family: 'Liberation Mono', 'Menlo', monospace;
+}
+.caption a {
+  text-decoration: none;
+}
+.caption a:hover {
+  text-decoration: underline;
 }
 
 ul.posts {
