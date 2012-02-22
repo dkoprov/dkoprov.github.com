@@ -1,5 +1,6 @@
 body{
   position: relative;
+  width: 80%;
   max-width: 1000px;
   color: #444;
   font-family: 'PT Serif', Georgia, serif;
@@ -32,9 +33,9 @@ h1 {
 }
 
 .caption{
-  border-bottom: 0.2em solid black;
+  border-bottom: 0.4em solid black;
   padding: .3em;
-  background-color: #C6E7ED;
+  /*background-color: #C6E7ED;*/
   text-align: right;
 }
 .caption img {
@@ -64,7 +65,7 @@ ul.posts li {
   line-height: 1.75em;
 }
 
-ul.posts span {
+ul.posts span, #post code {
   font-family: 'Liberation Mono', 'Menlo', monospace;
   font-size: 80%;
 }
