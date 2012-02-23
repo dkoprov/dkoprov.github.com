@@ -35,7 +35,6 @@ h1 {
 .caption{
   border-bottom: 0.1em solid black;
   padding: .3em;
-  /*background-color: #C6E7ED;*/
   text-align: right;
 }
 .caption img {
@@ -48,10 +47,12 @@ h1 {
   margin-left: .1em;
   font-family: 'Liberation Mono', 'Menlo', monospace;
 }
-.caption a {
+a.root_link {
+  color: #444;
   text-decoration: none;
 }
-.caption a:hover {
+a.root_link:hover {
+  color: #00A;
   text-decoration: underline;
 }
 
