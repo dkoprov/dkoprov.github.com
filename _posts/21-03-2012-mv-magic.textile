@@ -10,7 +10,7 @@ p(meta). 21 Mar 2012
 Совершенно неожиданно наткнулся на lifehack в *nix консоли.
 Чтобы переименовать файл errors.txt в errata.txt не надо набирать страшную вещь вроде:
 
-bc. mv some_directory/another/and_another/errors.txt some_directory/and_another/and_another/errata.txt
+bc. mv some_directory/another/and_another/errors.txt some_directory/another/and_another/errata.txt
 
 Все, что нам надо сделать в этом случае, это:
 
