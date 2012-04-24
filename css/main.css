@@ -10,7 +10,7 @@ body{
   margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6, .caption {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'PT Serif Caption', 'Droid Serif', Georgia, serif;
 }
 
@@ -35,6 +35,8 @@ h1 {
 .caption {
   font-size: 5em;
   line-height: 5.4em;
+  color: #F54;
+  font-variant: small-caps;
 }
 
 .header{
