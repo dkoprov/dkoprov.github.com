@@ -40,7 +40,7 @@ h1 {
 }
 
 .header{
-  border-bottom: 0.1em solid black;
+  border-bottom: 0.1em solid #999;
   padding: .3em;
   text-align: right;
 }
