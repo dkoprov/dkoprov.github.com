@@ -54,6 +54,11 @@ h1 {
   margin-left: .1em;
   font-family: 'Liberation Mono', 'Menlo', monospace;
 }
+
+a.about {
+  text-decoration: none;
+  color: #444;
+}
 a.root_link {
   color: #F54;
   font-size: 3em;
