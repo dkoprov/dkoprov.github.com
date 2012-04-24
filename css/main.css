@@ -55,9 +55,11 @@ h1 {
   font-family: 'Liberation Mono', 'Menlo', monospace;
 }
 a.root_link {
-  color: #444;
-  font-size: 2em;
+  color: #F54;
+  font-size: 3em;
+  font-variant: small-caps;
   text-decoration: none;
+  position: absolute;
 }
 a.root_link:hover {
   color: #00A;
