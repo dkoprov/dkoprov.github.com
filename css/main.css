@@ -29,18 +29,23 @@ p.meta {
 
 h1 {
   font-size: 1.6em;
-  margin: 2em 0 1em 0;
+  line-height: 3em;
 }
 
-.caption{
+.caption {
+  font-size: 5em;
+  line-height: 5.4em;
+}
+
+.header{
   border-bottom: 0.1em solid black;
   padding: .3em;
   text-align: right;
 }
-.caption img {
+.header img {
   margin-bottom: -7px;
 }
-.caption span {
+.header span {
   float: left;
   display: inline-block;
   clear: both;
@@ -49,6 +54,7 @@ h1 {
 }
 a.root_link {
   color: #444;
+  font-size: 2em;
   text-decoration: none;
 }
 a.root_link:hover {
