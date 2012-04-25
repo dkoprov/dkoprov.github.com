@@ -1,0 +1,50 @@
+
+---
+layout: post
+title: Pry и rails 3.2
+published: true
+---
+h1. {{ page.title }}
+
+p(meta). 23 Apr 2012
+
+Время не стоит на месте, и rails развивается своим неведомым путем.
+Так получается, что "мои советы":http://dmitry.koprov.ru/2012/02/21/pry-in-rails-console.html по работе с pry для привязки его к rails уже не работают в rails 3.2. В частности, если сделать так, как я писал, в консоли не получится сделать @reload!@. Все из-за "этого":https://github.com/rails/rails/pull/3509 Pull Request'а. Теперь, вместо расширения класса @Object@ и соотв. "загрязнения" глобального namespace, методы работы с консолью помещены в @IRB::ExtendCommandBundle@.
+
+Выход из этой ситуации: переписать конфиги соответственно.
+В @config/environments/development.rb@ пишем:
+
+{%highlight ruby%}
+silence_warnings do
+  begin
+    require 'pry'
+    IRB = Pry
+    module Pry::RailsCommands ;end
+    IRB::ExtendCommandBundle = Pry::RailsCommands
+  rescue LoadError
+  end
+end
+{%endhighlight%}
+
+В корне создаем файл @.pryrc@ и там:
+
+{% highlight ruby %}
+if Kernel.const_defined?("Rails") then
+  require File.join(Rails.root,"config","environment")
+  require 'rails/console/app'
+  require 'rails/console/helpers'
+  Pry::RailsCommands.instance_methods.each do |name|
+    Pry::Commands.command name.to_s do
+      Class.new.extend(Pry::RailsCommands).send(name)
+    end
+  end
+end
+{% endhighlight %}
+
+h2. А если ты любишь гномиков...
+
+...то все резко меняется! Всего лишь
+
+bc. gem install pry-rails
+
+И еще одной колонией гномиков больше на твоем проекте! И, главное, – все работает без этих всяких там @.pryrc@.
