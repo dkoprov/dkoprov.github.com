@@ -1,6 +1,6 @@
---- 
+---
 layout: post
-title: Про делой rails 3.1 приложений
+title: Про деплой rails 3.1 приложений
 published: true
 ---
 h1. {{ page.title }}
