@@ -10,7 +10,7 @@ body{
   margin: 1em auto;
 }
 
-h1, h2, h3, h4, h5, h6, caption, root_link {
+h1, h2, h3, h4, h5, h6, .caption, .root_link {
   font-family: 'PT Serif Caption', 'Droid Serif', Georgia, serif;
 }
 
