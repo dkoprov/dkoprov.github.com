@@ -1,7 +1,7 @@
 
 ---
 layout: post
-title: rspec + spin (+ vim) = быстрое и удобное тестирование
+title: rspec + spin (+ vim) = удобное тестирование
 published: true
 ---
 h1. {{ page.title }}
