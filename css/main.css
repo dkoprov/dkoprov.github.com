@@ -6,7 +6,7 @@ body{
   font-family: 'PT Serif', 'Droid Serif', Georgia, serif;
   text-rendering: optimizelegibility;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
-  font-size: 1.5em;
+  font-size: 1.3em;
   line-height: 1.5em;
   padding: 0 .3em 2em;
   margin: 1em auto;
@@ -86,6 +86,11 @@ ul.posts li {
 ul.posts span, #post code {
   font-family: 'Liberation Mono', 'Menlo', monospace;
   font-size: 90%;
+}
+
+#post code {
+  padding: .2em;
+  background-color: #FEFFA8;
 }
 
 #post {
