@@ -88,7 +88,7 @@ ul.posts span, #post code {
   font-size: 90%;
 }
 
-#post code {
+#post p code {
   padding: .2em;
   background-color: #FEFFA8;
 }
