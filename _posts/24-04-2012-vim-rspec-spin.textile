@@ -48,18 +48,7 @@ end
 
 Допустим, ты не хочешь гнать весь этот спек. Только тест в контексте, когда "солнце светит". Пиши @rspec <file_path>:10@. И прогонится только тест в контексте 10-й строки. Причем, эта фишка учитывает все вложенные контексты, описания и тд. Очень удобная вещь!
 
-Одно *но*.
-
-Хотя в README к spin написано, что он тоже поддерживает такое поведение, на деле – нет. И самое плохое, мой "pull request":https://github.com/jstorimer/spin/pull/39 уже третью неделю валяется без малейшего внимания авторов. Поэтому, чтобы поиметь возможность писать @spin push <file_path>:<line_number>@ надо брать spin из "моего форка":https://github.com/dkoprov/spin
-Как впихнуть мою ветку себе в @Gemfile@ все знают. Но вдруг?
-
-{% highlight ruby %}
-group :development do
-  gem 'spin' :git => 'git://github.com/dkoprov/spin.git'
-end
-{% endhighlight %}
-
-Но потом вместо @spin serve@ придется писать @bundle exec spin serve@. Но, впрочем, кому я рассказываю?.. Надеюсь, авторы все же найдут время на рассмотрение pull request'а.
+21 мая Jesse добавил немного моего кода в проект, и теперь, начиная с версии 0.4.6 удобный функционал rspec доступен и в spin!
 
 h2. Причем тут vim?
 
@@ -70,7 +59,7 @@ h2. Причем тут vim?
 " Spin spec pusher
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! PushToSpin(args)
-  let cmd = ":! bundle exec spin push %" . a:args
+  let cmd = ":! spin push %" . a:args
   execute cmd
 endfunction
 
