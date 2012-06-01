@@ -15,12 +15,12 @@ Some nice day you decide to update formulas, everything was fine, but... When yo
 bc. file not found: /usr/local/lib/libtiff.3.dylib for architecture x86_64
 
 Or something like this. Bum! You're in problem now.
-It happes because of the libtiff update. It bumped up @libtiff.3.dylib@ to @libdiff.5.dylib@. But @rmagick@ still relies on vercion 3. And it was not updated since Aprill 5, 2010 What a mess...
+It happes because of the libtiff update. It bumped up @libtiff.3.dylib@ to @libdiff.5.dylib@. But @rmagick@ still relies on version 3. And it was not updated since Aprill 5, 2010 What a mess...
 
 h2. Homebrew to the rescue!
 
 You are using Homebrew, aren't you?
-If so, described problem has a neat solution. All you have to do is revert libtiff to version 3. Watch the hands:
+If it's so, the described problem has a neat solution. All you have to do is to revert libtiff to version 3. Watch the hands:
 
 bc. brew versions libtiff
 4.0.1    git checkout 9139239 /usr/local/Library/Formula/libtiff.rb
