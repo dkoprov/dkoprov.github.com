@@ -1,0 +1,39 @@
+---
+layout: post
+title: libtiff-4.0.1 and rmagick don't fit together
+published: true
+---
+h1. {{ page.title }}
+
+p(meta). 01 Jun 2012
+
+h2. Problems?
+
+I'm assuming you're running MacOS with Homebrew installed.
+Some nice day you decide to update formulas, everything was fine, but... When you tried to start rails console, or server, you got:
+bc. file not found: /usr/local/lib/libtiff.3.dylib for architecture x86_64
+
+Or something like this. Bum! You're in problem now.
+It happes because of the libtiff update. It bumped up @libtiff.3.dylib@ to @libdiff.5.dylib@. But @rmagick@ still relies on vercion 3. And it was not updated since Aprill 5, 2010 What a mess...
+
+h2. Homebrew to the rescue!
+
+You are using Homebrew, aren't you?
+If so, described problem has a neat solution. All you have to do is revert libtiff to version 3. Watch the hands:
+
+bc. brew versions libtiff
+4.0.1    git checkout 9139239 /usr/local/Library/Formula/libtiff.rb
+3.9.5    git checkout 1bcb7dc /usr/local/Library/Formula/libtiff.rb
+3.9.4    git checkout 0476235 /usr/local/Library/Formula/libtiff.rb
+3.9.2    git checkout 91cc316 /usr/local/Library/Formula/libtiff.rb
+3.9.1    git checkout e306bc5 /usr/local/Library/Formula/libtiff.rb
+3.8.2    git checkout 69ec0ed /usr/local/Library/Formula/libtiff.rb
+
+bc. brew switch libtiff 3.9.5
+Cleaning /usr/local/Cellar/libtiff/3.9.5
+Cleaning /usr/local/Cellar/libtiff/4.0.1
+99 links created for /usr/local/Cellar/libtiff/3.9.5
+
+and finally I decided to reinstall all my gems (btw: I'm using rvm, and if you don't, go use!)Just @rvm gemset delete <yout_gemset_name>@, create it againg and @bunle@.
+
+That's it!
