@@ -35,6 +35,6 @@ Cleaning /usr/local/Cellar/libtiff/3.9.5
 Cleaning /usr/local/Cellar/libtiff/4.0.1
 99 links created for /usr/local/Cellar/libtiff/3.9.5
 
-and finally I decided to reinstall all my gems (btw: I'm using rvm, and if you don't, go use!) Just @rvm gemset empty <yout_gemset_name>@ and @bundle@.
+and finally I decided to reinstall all my gems (btw: I'm using rvm, and if you don't, go use!) Just @rvm gemset empty <your_gemset_name>@ and @bundle@.
 
 That's it!
