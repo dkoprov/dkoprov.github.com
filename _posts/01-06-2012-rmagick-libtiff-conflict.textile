@@ -11,6 +11,7 @@ h2. Problems?
 
 I'm assuming you're running MacOS with Homebrew installed.
 Some nice day you decide to update formulas, everything was fine, but... When you tried to start rails console, or server, you got:
+
 bc. file not found: /usr/local/lib/libtiff.3.dylib for architecture x86_64
 
 Or something like this. Bum! You're in problem now.
