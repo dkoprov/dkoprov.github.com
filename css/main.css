@@ -35,6 +35,10 @@ h1 {
   margin: 1.8em 0 0;
 }
 
+pre {
+  line-height: 1.2em;
+}
+
 .caption {
   font-size: 5em;
   line-height: 5.4em;
