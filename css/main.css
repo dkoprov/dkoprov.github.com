@@ -1,19 +1,12 @@
 body{
   position: relative;
-  width: 80%;
-  max-width: 900px;
+  max-width: 60em;
   color: #444;
-  font-family: "Palatino", "Lucida Grande", 'PT Serif', 'Droid Serif', Georgia, serif;
+  font-family: Georgia, serif;
   text-rendering: optimizelegibility;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
-  font-size: 1.2em;
-  line-height: 1.4em;
+  font-size: 1.25em;
   padding: 0 .3em 2em;
   margin: 1em auto;
-}
-
-h1, h2, h3, h4, h5, h6, .caption, .root_link {
-  font-family: 'PT Serif Caption', 'Droid Serif', Georgia, serif;
 }
 
 a {
@@ -35,24 +28,27 @@ h1 {
   margin: 1.8em 0 0;
 }
 
+img {
+  margin-bottom: -7px;
+}
+
 pre {
   line-height: 1.2em;
 }
 
+.howdy {
+  font-size: 1.75em;
+  line-height: 1.4em;
+}
+
 .caption {
-  font-size: 5em;
-  line-height: 5.4em;
+  font-size: 3em;
   color: #F54;
-  font-variant: small-caps;
 }
 
 .header{
-  border-bottom: 0.1em solid #999;
   padding: .3em;
   text-align: right;
-}
-.header img {
-  margin-bottom: -7px;
 }
 .header span {
   float: left;
@@ -66,16 +62,13 @@ a.about {
   text-decoration: none;
   color: #444;
 }
-a.root_link {
-  color: #F54;
-  font-size: 3em;
-  font-variant: small-caps;
+a.home_link {
+  color: #ddd;
   text-decoration: none;
   position: absolute;
 }
 a.root_link:hover {
   color: #00A;
-  text-decoration: underline;
 }
 
 ul.posts {
