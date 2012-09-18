@@ -1,12 +1,10 @@
 body{
-  position: relative;
   max-width: 50em;
   color: #444;
   font-family: Georgia, serif;
   text-rendering: optimizelegibility;
-  font-size: 1.25em;
-  line-height: 1.4em;
-  padding: 0 .3em 2em;
+  font-size: 1.1em;
+  line-height: 1.5em;
   margin: 1em auto;
 }
 
