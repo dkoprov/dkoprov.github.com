@@ -36,6 +36,10 @@ pre {
   line-height: 1.2em;
 }
 
+code {
+  font-size: 90%;
+}
+
 .howdy {
   font-size: 1.55em;
   line-height: 1.2em;
@@ -56,7 +60,7 @@ a.about {
   color: #444;
 }
 a.home_link {
-  color: #ddd;
+  color: #ccc;
   text-decoration: none;
   padding-bottom: 4em;
 }
@@ -72,10 +76,9 @@ ul.posts li {
 }
 
 ul.posts li span {
-  color: #999;
+  color: #ccc;
   font-family: 'Liberation Mono', 'Menlo', monospace;
   font-size: 90%;
-  text-decoration: underline;
 }
 
 ul.posts li a {
