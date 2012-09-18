@@ -87,6 +87,10 @@ ul.posts li a {
   color: #444;
 }
 
+ul.posts li annotation {
+  color: #777;
+}
+
 #post p code {
   padding: .2em;
   background-color: lightYellow;

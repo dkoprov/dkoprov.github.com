@@ -3,6 +3,7 @@
 layout: post
 title: Pry и rails 3.2
 published: true
+annotation: Предыдущая заметка о pry описывала подключение pry в консоль для rails версий < 3.2.x. Здесь я дополнил описание для актуальных версий рельс.
 ---
 h1. {{ page.title }}
 

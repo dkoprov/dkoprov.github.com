@@ -2,6 +2,7 @@
 layout: post
 title: libtiff-4.0.1 and rmagick don't fit together
 published: true
+annotation: I met a rmagick and libtiff conflict today, so this note gives a solution.
 ---
 h1. {{ page.title }}
 

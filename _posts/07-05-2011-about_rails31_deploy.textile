@@ -2,6 +2,7 @@
 layout: post
 title: Про деплой rails 3.1 приложений
 published: true
+annotation: Заметка о том, что надо помнить при деплое rails 3.x приложений.
 ---
 h1. {{ page.title }}
 

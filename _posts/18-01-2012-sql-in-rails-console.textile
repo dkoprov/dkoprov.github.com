@@ -2,6 +2,7 @@
 layout: post
 title: "SQL в Rails консоли"
 published: true
+annotation: Как организовать вывод SQL в rails консоль, если rails версии 3 и ниже.
 ---
 h1. {{ page.title }}
 

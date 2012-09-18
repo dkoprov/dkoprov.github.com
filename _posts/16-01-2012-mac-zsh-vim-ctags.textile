@@ -2,6 +2,7 @@
 layout: post
 title: "mac + zsh + vim + ctags + vim_rails"
 published: true
+annotation: В этой заметке описана проблема организации работы ctags в vim в MacOS, если в терминале ты пользуешься zsh. Что использовать и как решить эту проблему.
 ---
 h1. {{ page.title }}
 

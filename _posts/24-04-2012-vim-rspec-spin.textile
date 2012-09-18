@@ -3,6 +3,7 @@
 layout: post
 title: rspec + spin (+ vim) = удобное тестирование
 published: true
+annotation: Описание великолепного, простого и элегатного инструмента для тестирования spine и то, как улучшить работу с ним, используя vim.
 ---
 h1. {{ page.title }}
 

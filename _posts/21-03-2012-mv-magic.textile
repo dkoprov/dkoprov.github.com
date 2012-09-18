@@ -2,6 +2,7 @@
 layout: post
 title: mv magic
 published: true
+annotation: Неожиданно приятное открытие в работе эмулятора терминала описано в этой заметке.
 ---
 h1. {{ page.title }}
 
