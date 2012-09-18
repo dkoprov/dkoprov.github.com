@@ -73,7 +73,9 @@ ul.posts {
 
 ul.posts li {
   line-height: 1.75em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1.1em;
+  padding-left: 0.5em;
+  border-left: 3px #eee dotted;
 }
 
 ul.posts li span.post_date {
@@ -92,6 +94,8 @@ ul.posts li span.post_annotation {
   font-family: 'Georgia', serif;
   font-style: italic;
   color: #999;
+  display: block;
+  width: 20em;
 }
 
 #post p code {
