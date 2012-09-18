@@ -68,14 +68,11 @@ a.home_link {
 ul.posts {
   list-style-type: none;
   padding-left: 0;
-  margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 ul.posts li {
-  line-height: 1.75em;
-  margin-bottom: 1.1em;
-  padding-left: 0.5em;
-  border-left: 1px #CBE7E8 dotted;
+  margin-bottom: 1.5em;
 }
 
 ul.posts li span.post_date {
@@ -86,17 +83,19 @@ ul.posts li span.post_date {
 
 ul.posts li a {
   font-family: 'Helvetica', sans;
+  font-weight: bold;
   text-decoration: none;
   color: #444;
 }
 
 ul.posts li span.post_annotation {
-  font-family: 'Georgia', serif;
-  font-style: italic;
   color: #999;
   display: block;
-  text-align: justify;
   width: 40em;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  line-height: 1.2em;
+  text-align: justify;
 }
 
 #post p code {
