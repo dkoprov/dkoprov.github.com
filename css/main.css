@@ -75,7 +75,7 @@ ul.posts li {
   line-height: 1.75em;
   margin-bottom: 1.1em;
   padding-left: 0.5em;
-  border-left: 3px #eee dotted;
+  border-left: 1px #CBE7E8 dotted;
 }
 
 ul.posts li span.post_date {
