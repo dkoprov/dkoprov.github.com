@@ -75,7 +75,7 @@ ul.posts li {
   line-height: 1.75em;
 }
 
-ul.posts li span {
+ul.posts li span.post_date {
   color: #777;
   font-family: 'Liberation Mono', 'Menlo', monospace;
   font-size: 90%;
@@ -87,8 +87,9 @@ ul.posts li a {
   color: #444;
 }
 
-ul.posts li annotation {
-  color: #777;
+ul.posts li span.post_annotation {
+  color: #999;
+  font-style: italic;
 }
 
 #post p code {

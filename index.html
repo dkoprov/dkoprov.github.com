@@ -6,10 +6,8 @@ title: Dmitry Koprov
 <ul class="posts">
   {% for post in site.posts %}
   <li>
-    <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
-    <div class="annotation">
-      post.annotation
-    </div>
+    <span class="post_date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+    <span class="post_annotation"> {{ post.annotation }} </span>
   </li>
   {% endfor %}
 </ul>
