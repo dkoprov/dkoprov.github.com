@@ -45,6 +45,9 @@ pre {
   font-size: 3em;
   color: #F54;
 }
+.caption em {
+  font-size: 2.5em;
+}
 
 .header{
   padding: .3em;
