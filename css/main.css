@@ -42,24 +42,13 @@ pre {
 }
 
 .caption {
-  font-size: 6em;
+  font-size: 2em;
   color: #F54;
-}
-.caption em {
-  font-size: .5em;
-  line-height: .5em;
 }
 
 .header{
   padding: .3em;
   text-align: right;
-}
-.header span {
-  float: left;
-  display: inline-block;
-  clear: both;
-  margin-left: .1em;
-  font-family: 'Liberation Mono', 'Menlo', monospace;
 }
 
 a.about {
@@ -71,9 +60,6 @@ a.home_link {
   text-decoration: none;
   position: absolute;
 }
-a.root_link:hover {
-  color: #00A;
-}
 
 ul.posts {
   list-style-type: none;
@@ -81,6 +67,15 @@ ul.posts {
   margin-bottom: 2em;
   font-family: 'Liberation Mono', 'Menlo', monospace;
   font-size: 90%;
+}
+
+ul.posts li {
+  line-height: 1.75em;
+}
+
+ul.posts li a {
+  text-decoration: none;
+  color: #444;
 }
 
 #post p code {
