@@ -95,6 +95,7 @@ ul.posts li span.post_annotation {
   font-style: italic;
   color: #999;
   display: block;
+  text-align: justify;
   width: 40em;
 }
 
