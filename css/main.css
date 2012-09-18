@@ -1,7 +1,7 @@
 body{
   max-width: 50em;
   color: #444;
-  font-family: Georgia, serif;
+  font-family: 'Georgia', serif;
   text-rendering: optimizelegibility;
   font-size: 1.1em;
   line-height: 1.5em;
@@ -73,6 +73,7 @@ ul.posts {
 
 ul.posts li {
   line-height: 1.75em;
+  margin-bottom: 0.5em;
 }
 
 ul.posts li span.post_date {
@@ -88,8 +89,9 @@ ul.posts li a {
 }
 
 ul.posts li span.post_annotation {
-  color: #999;
+  font-family: 'Georgia', serif;
   font-style: italic;
+  color: #999;
 }
 
 #post p code {
