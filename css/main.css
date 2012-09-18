@@ -37,8 +37,8 @@ pre {
 }
 
 .howdy {
-  font-size: 1.75em;
-  line-height: 1.4em;
+  font-size: 1.55em;
+  line-height: 1.2em;
 }
 
 .caption {
@@ -58,7 +58,7 @@ a.about {
 a.home_link {
   color: #ddd;
   text-decoration: none;
-  position: absolute;
+  padding-bottom: 4em;
 }
 
 ul.posts {
@@ -72,7 +72,7 @@ ul.posts li {
 }
 
 ul.posts li span {
-  color: #eee;
+  color: #999;
   font-family: 'Liberation Mono', 'Menlo', monospace;
   font-size: 90%;
   text-decoration: underline;
