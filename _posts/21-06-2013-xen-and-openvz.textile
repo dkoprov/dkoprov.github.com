@@ -25,9 +25,9 @@ p(meta). 21 Jun 2013
 h3. P.S. есть поискать на serverfault
 
 ...то можно найти исчерпывающие ответы на мой вопрос:
-1. http://serverfault.com/questions/382028/dedicated-server-virtualization-xen-or-openvz
-2. http://serverfault.com/questions/433179/should-i-choose-kvm-xen-over-openvz-or-use-them-together
-3. http://serverfault.com/questions/328429/advice-on-most-fitting-choice-of-virtualization-platform-xen-openvz-kvm-o
-4. http://serverfault.com/questions/190029/what-do-you-recommend-openvz-or-xen-domu
-5. http://serverfault.com/questions/12110/which-virtualization-platforms-should-i-choose-xen-or-openvz
-6. http://serverfault.com/questions/215313/openvz-vs-xen-how-much-difference-in-performance
+* "Раз":http://serverfault.com/questions/382028/dedicated-server-virtualization-xen-or-openvz
+* "Два":http://serverfault.com/questions/433179/should-i-choose-kvm-xen-over-openvz-or-use-them-together
+* "Три":http://serverfault.com/questions/328429/advice-on-most-fitting-choice-of-virtualization-platform-xen-openvz-kvm-o
+* "Черыте":http://serverfault.com/questions/190029/what-do-you-recommend-openvz-or-xen-domu
+* "Пять":http://serverfault.com/questions/12110/which-virtualization-platforms-should-i-choose-xen-or-openvz
+* "Шесть":http://serverfault.com/questions/215313/openvz-vs-xen-how-much-difference-in-performance
