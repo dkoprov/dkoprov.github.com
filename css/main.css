@@ -153,7 +153,6 @@ code {
   font-family: Helvetica, PT Sans, sans-serif;
   font-size: 1.25em;
   line-height: 90%;
-  margin-left: 5em;
 }
 
 a.header_link {
@@ -239,7 +238,7 @@ article {
     font-size: 100%;
   }
 
-  .content, header, footer {
+  .content, .about, header, footer {
     padding: 1.5em;
   }
 
@@ -255,7 +254,7 @@ article {
 
 @media screen and (min-width: 29.9375em) {
 
-  .content, header, footer {
+  .content, .about, header, footer {
     padding: 1.5em 3em;
     max-width: 34.3em;
     }
@@ -272,7 +271,7 @@ article {
 
 @media screen and (min-width: 38em) {
 
-  .content, header, footer {
+  .content, .about, header, footer {
     padding: 0 7.59372em;
   }
 
@@ -294,7 +293,7 @@ article {
     font-size: 112.5%;
   }
 
-  .content, header, footer {
+  .content, .about, header, footer {
     max-width: 44.43736em;
   }
 
