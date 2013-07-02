@@ -30,13 +30,18 @@
   font-style: normal;
 }
 
-body{
-  max-width: 50em;
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background: rgb(255,255,255);
+  overflow-y: scroll;
+}
+
+body {
   color: #444;
   font-family: 'AcademyWeb', Georgia, serif;
-  font-size: 1.1em;
+  font-size: 81.25%;
   line-height: 1.5em;
-  margin: 1em auto;
 }
 
 i, em {
@@ -60,10 +65,69 @@ p.meta {
   color: #494949;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  -moz-font-feature-settings: "liga=1, kern=1";
+  -ms-font-feature-settings: "liga" 1, "kern" 1;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 1.42382em;
+  font-weight: normal;
+}
+
 h1 {
-  font-size: 1.8em;
-  line-height: 1em;
-  margin: 1.8em 0 0;
+  margin: .97em 0 .5em;
+  line-height: 1.125em;
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+}
+
+.ie h1 {
+  font-size: 4em;
+  }
+
+h2 {
+  line-height: 1.77777em;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  }
+
+h3 {
+  margin: 1.7em 0 .85em;
+  line-height: 1.5em;
+  font-size: 1.3em;
+  }
+
+h4 {
+  line-height: 1.12382em;
+  margin: 0 0 1.3em;
+  font-size: 1.2em;
+  }
+
+h5 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  margin: 0 0 1.5em;
+  font-size: 1em;
+  }
+
+h6 {
+  font-weight: bold;
+  margin: 0 0 1.5em;
+  }
+
+p, blockquote, .content img {
+  margin-bottom: 1.5em;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+abbr {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  cursor: help;
 }
 
 img {
@@ -78,28 +142,21 @@ code {
   font-size: 90%;
 }
 
-.howdy {
-  font-size: 1.55em;
-  line-height: 1.2em;
-}
-
-.caption {
-  font-size: 3em;
-  font-family: Didot, Georgia, serif;
-  line-height: 1.3em;
+.caption h1 {
   color: #F54;
+  font-style: normal;
+  text-transform: lowercase;
+  font-variant: small-caps;
 }
 
-.header{
-  padding: .3em;
-  text-align: right;
+.about {
+  font-family: Helvetica, PT Sans, sans-serif;
+  font-size: 1.25em;
+  line-height: 90%;
+  margin-left: 5em;
 }
 
-a.about {
-  text-decoration: none;
-  color: #444;
-}
-a.home_link {
+a.header_link {
   color: #ccc;
   text-decoration: none;
   padding-bottom: 4em;
@@ -122,7 +179,7 @@ ul.posts li span.post_date {
 }
 
 ul.posts li a {
-  font-family: 'Helvetica', sans;
+  font-family: Helvetica, sans;
   font-weight: bold;
   text-decoration: none;
   color: #444;
@@ -138,12 +195,108 @@ ul.posts li span.post_annotation {
   text-align: justify;
 }
 
-#post p code {
+article p code {
   padding: .2em;
   background-color: lightYellow;
 }
 
-#post {
+article {
   margin-bottom: 5em;
   text-align: justify;
 }
+
+/*
+  MIN-WIDTH: 15.652em
+--------------------------------------------- */
+
+@media screen and (min-width: 15.652em) {
+
+  body {
+    font-size: 87.5%;
+    }
+
+  h2 {
+    font-size: 1.26562em;
+    }
+
+  h3 {
+    font-size: 1.5em;
+    }
+
+  h4 {
+    font-size: 1.26562em;
+    }
+
+  }
+
+/*
+  MIN-WIDTH: 19.9375em
+--------------------------------------------- */
+
+@media screen and (min-width: 19.9375em) {
+
+  body {
+    font-size: 100%;
+  }
+
+  .content, header, footer {
+    padding: 1.5em;
+  }
+
+  h1 {
+    font-size: 3em;
+    }
+
+  }
+
+/*
+  MIN-WIDTH: 29.9375em
+--------------------------------------------- */
+
+@media screen and (min-width: 29.9375em) {
+
+  .content, header, footer {
+    padding: 1.5em 3em;
+    max-width: 34.3em;
+    }
+
+  ul, ol {
+    margin-left: 0;
+  }
+
+}
+
+/*
+  MIN-WIDTH: 38em
+--------------------------------------------- */
+
+@media screen and (min-width: 38em) {
+
+  .content, header, footer {
+    padding: 0 7.59372em;
+  }
+
+  h1 {
+    margin: .97em 0 .8em;
+    font-size: 4em;
+  }
+
+}
+
+/*
+  MIN-WIDTH: 99.9375em
+--------------------------------------------- */
+
+@media screen and (min-width: 99.9375em) {
+
+  body {
+    line-height: 1.75em;
+    font-size: 112.5%;
+  }
+
+  .content, header, footer {
+    max-width: 44.43736em;
+  }
+
+}
+
