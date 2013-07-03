@@ -152,7 +152,16 @@ code {
 .about {
   font-family: Helvetica, PT Sans, sans-serif;
   font-size: 1.25em;
-  line-height: 90%;
+}
+.about h1 {
+  margin: 0;
+  font-size: 3em;
+  font-style: normal;
+  font-weight: bold;
+  text-align: left;
+}
+.about h2 {
+  margin: 0;
 }
 
 a.header_link {
