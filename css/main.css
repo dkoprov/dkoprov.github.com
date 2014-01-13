@@ -158,6 +158,12 @@ header p {
   font-weight: normal;
 }
 
+footer p {
+  border-top: 1px solid #ccc;
+  color: #555;
+  font-size: 80%;
+}
+
 ul.posts {
   list-style-type: none;
   padding-left: 0;
