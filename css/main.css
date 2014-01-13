@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
   margin-bottom: 1.42382em;
   font-weight: normal;
-  font-family: PT Serif caption, DejaVuSerifCondensed-Bold, Helvetiva, Georgia;
+  font-family: PT Serif caption, 'DejaVuSerifCondensed-Bold', Helvetiva, Georgia;
 }
 
 h1 {
@@ -148,25 +148,14 @@ code {
   font-variant: small-caps;
 }
 
-.about {
-  font-family: Helvetica, PT Sans, sans-serif;
-  font-size: 1.25em;
-}
-.about h1 {
-  margin: 0;
-  font-size: 3em;
-  font-style: normal;
-  font-weight: bold;
-  text-align: left;
-}
-.about h2 {
-  margin: 0;
-}
-
 a.header_link {
   color: #ccc;
   text-decoration: none;
   padding-bottom: 4em;
+}
+
+header p {
+  font-weight: normal;
 }
 
 ul.posts {
@@ -196,7 +185,6 @@ ul.posts li span.post_annotation {
   color: #999;
   display: block;
   width: 40em;
-  font-family: 'georgia', serif;
   font-style: italic;
   line-height: 1.2em;
   text-align: justify;
