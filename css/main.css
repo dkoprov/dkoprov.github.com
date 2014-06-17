@@ -1,8 +1,8 @@
+/*
+ * AcademyWeb, AcademyWebBold & AcademyWebItalic © ParaType.
+ * More information at http://fonts.ru/pstore/default.asp?fcode=PT_ACD&letter=A
+ */
 @font-face {
-  /*
-   * AcademyWeb, AcademyWebBold & AcademyWebItalic © ParaType.
-   * More information at http://fonts.ru/pstore/default.asp?fcode=PT_ACD&letter=A
-   */
   font-family: 'AcademyWebBold';
   src: url('fonts/ACD75__W.eot');
   src:
@@ -10,15 +10,19 @@
        url('fonts/ACD75__W.woff') format('woff'),
        url('fonts/ACD75__W.ttf') format('truetype'),
        url('fonts/ACD75__W.svg#AcademyWeb-Bold') format('svg');
+}
 
-	font-family: 'AcademyWeb';
-	src: url('fonts/ACD55__W.eot');
-	src:
-	     url('fonts/ACD55__W.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/ACD55__W.woff') format('woff'),
-	     url('fonts/ACD55__W.ttf') format('truetype'),
-	     url('fonts/ACD55__W.svg#AcademyWeb') format('svg');
+@font-face {
+  font-family: 'AcademyWeb';
+  src: url('fonts/ACD55__W.eot');
+  src:
+       url('fonts/ACD55__W.eot?#iefix') format('embedded-opentype'),
+       url('fonts/ACD55__W.woff') format('woff'),
+       url('fonts/ACD55__W.ttf') format('truetype'),
+       url('fonts/ACD55__W.svg#AcademyWeb') format('svg');
+}
 
+@font-face {
   font-family: 'AcademyWebItalic';
   src: url('fonts/ACD56__W.eot');
   src:
@@ -248,7 +252,7 @@ article {
     font-size: 100%;
   }
 
-  .content, .about, header, article, footer {
+  .content, .about, header, footer {
     padding: 1.5em;
   }
 
@@ -260,7 +264,7 @@ article {
 
 @media screen and (min-width: 29.9375em) {
 
-  .content, .about, header, article, footer {
+  .content, .about, header, footer {
     padding: 1.5em 3em;
     }
 
@@ -280,7 +284,7 @@ article {
     font-size: 122.5%;
   }
 
-  .content, .about, header, article, footer {
+  .content, .about, header, footer {
     padding: 0 7.59372em;
   }
 
