@@ -4,32 +4,32 @@
  */
 @font-face {
   font-family: 'AcademyWebBold';
-  src: url('fonts/ACD75__W.eot');
+  src: url('/fonts/ACD75__W.eot');
   src:
-       url('fonts/ACD75__W.eot?#iefix') format('embedded-opentype'),
-       url('fonts/ACD75__W.woff') format('woff'),
-       url('fonts/ACD75__W.ttf') format('truetype'),
-       url('fonts/ACD75__W.svg#AcademyWeb-Bold') format('svg');
+       url('/fonts/ACD75__W.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/ACD75__W.woff') format('woff'),
+       url('/fonts/ACD75__W.ttf') format('truetype'),
+       url('/fonts/ACD75__W.svg#AcademyWeb-Bold') format('svg');
 }
 
 @font-face {
   font-family: 'AcademyWeb';
-  src: url('fonts/ACD55__W.eot');
+  src: url('/fonts/ACD55__W.eot');
   src:
-       url('fonts/ACD55__W.eot?#iefix') format('embedded-opentype'),
-       url('fonts/ACD55__W.woff') format('woff'),
-       url('fonts/ACD55__W.ttf') format('truetype'),
-       url('fonts/ACD55__W.svg#AcademyWeb') format('svg');
+       url('/fonts/ACD55__W.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/ACD55__W.woff') format('woff'),
+       url('/fonts/ACD55__W.ttf') format('truetype'),
+       url('/fonts/ACD55__W.svg#AcademyWeb') format('svg');
 }
 
 @font-face {
   font-family: 'AcademyWebItalic';
-  src: url('fonts/ACD56__W.eot');
+  src: url('/fonts/ACD56__W.eot');
   src:
-       url('fonts/ACD56__W.eot?#iefix') format('embedded-opentype'),
-       url('fonts/ACD56__W.woff') format('woff'),
-       url('fonts/ACD56__W.ttf') format('truetype'),
-       url('fonts/ACD56__W.svg#AcademyWeb-Italic') format('svg');
+       url('/fonts/ACD56__W.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/ACD56__W.woff') format('woff'),
+       url('/fonts/ACD56__W.ttf') format('truetype'),
+       url('/fonts/ACD56__W.svg#AcademyWeb-Italic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -43,17 +43,9 @@ html {
 
 body {
   color: #444;
-  font-family: 'AcademyWeb', Georgia, serif;
-  font-size: 81.25%;
+  font-family: Georgia, serif;
+  font-size: 100%;
   line-height: 1.5em;
-}
-
-i, em {
-  font-family: 'AcademyWebItalic', serif;
-}
-
-strong, b {
-  font-family: 'AcademyWebBold', serif;
 }
 
 a {
