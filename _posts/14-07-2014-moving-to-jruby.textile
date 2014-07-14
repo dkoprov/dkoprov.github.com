@@ -1,0 +1,51 @@
+---
+layout: post
+title: Заметки о переходе rails-приложения с MRI на JRuby
+published: true
+annotation: Несколько наблюдений при переводе приложения на JRuby.
+---
+h1. {{ page.title }}
+
+p(meta). 14 Jul 2014
+
+h2. Стоит ли задумываться о переходе на JRuby?
+
+Однозначно стоит, если вам _действительно_ нужна многозадачность и интеграция в существующую Java-экосистему.
+Не стоит во всех остальных случаях.
+JRuby развивается крайне инертно, сам же Ruby лишён подробной спецификации того, как именно должна работать многозадачность. Последнее вызывает немало проблем, если вам нужен строгий порядок выполнения действий.
+
+Стоит отметить, что переход на JVM, помимо пресловутой "тру многозадачности", даёт вам множество вариантов настройки JVM под нужды вашего приложения. В частности, эта замечательная "статья":http://mechanical-sympathy.blogspot.ru/2013/07/java-garbage-collection-distilled.html описывает тонкости работы и обоснование выбора одного из существующих сборщиков мусора.
+
+h2. О чём стоит позаботиться при переходе Rails-приложения на JRuby
+
+1. Надо заменить гемы. Список для моего приложения в формате <для MRI> => <для JRuby>
+
+{% highlight ruby %}
+gem "pg" => gem "activerecord-jdbcpostgresql-adapter"
+gem "therubyracer" => gem "therubyrhino"
+gem "redcarpet" => gem "kramdown"
+{% endhighlight %}
+Не так уж и много.
+
+2. Если приложение основано на rails > 4.0, у вас возникнут ошики @OpenSSL::Cipher::CipherError@. "Решение проблемы":https://github.com/jruby/jruby/wiki/UnlimitedStrengthCrypto.
+3. Надо расставить _магические комментарии_ @# encoding: utf-8@ во всех файлах, где не US_ASCII-символы. Последние версии MRI уже отучили от этого, но в JRuby всё по-старому. Спасибо Лёне Швецову за короткий "bash snippet":http://leonid.shevtsov.me/en/how-to-insert-the-encoding-utf-8-directive-automatically-in-ruby-1-9-files.
+4. Не забывайте, что JRuby не поддерживает ruby-2.0. Именованные параметры и прочее — в (далёком?) будущем.
+
+Вся эта информация свободно находится в гугле. Я решил собрать её здесь, т.к. спустя 2 месяца снова пришлось открывать несколько вкладок в браузере.
+
+h2. In case if you are non-Russian speaking guest
+
+Here is a short checklist for moving Rails-app from MRI to JRuby:
+
+1. Change some gems. In my case I had to switch:
+
+{% highlight ruby %}
+gem "pg" => gem "activerecord-jdbcpostgresql-adapter"
+gem "therubyracer" => gem "therubyrhino"
+gem "redcarpet" => gem "kramdown"
+{% endhighlight %}
+
+2. If your application is built upon rails > 4.0 there will be an @OpenSSL::Cipher::CipherError@. Here is a "solution":https://github.com/jruby/jruby/wiki/UnlimitedStrengthCrypto.
+3. Don't forget that JRuby doesn't support Ruby 2.0 features such as named params etc.
+
+Hope, this helped!
